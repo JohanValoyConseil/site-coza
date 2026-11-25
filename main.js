@@ -195,7 +195,7 @@
     .from('.hero__card--left', { x: -400, y: 200, rotate: -40, opacity: 0, duration: 1.4 }, 2.3)
     .from('.hero__card--right', { x: 400, y: 200, rotate: 40, opacity: 0, duration: 1.4 }, 2.4)
     .from('.hero__lemon', { scale: 0, rotate: 90, duration: 1.2, stagger: .15, ease: 'elastic.out(1,.5)' }, 2.7)
-    .from(['.hero__sub', '.hero__ctas .btn'], { y: 30, opacity: 0, duration: .9, stagger: .1 }, 2.9)
+    .from(['.hero__sub', '.hero__adresse', '.hero__ctas .btn'], { y: 30, opacity: 0, duration: .9, stagger: .1 }, 2.9)
     .from('.badge', { scale: 0, rotate: -180, duration: 1.2, ease: 'back.out(1.6)' }, 3.1)
     .from('.nav', { autoAlpha: 0, duration: .9, clearProps: 'opacity,visibility' }, 3);
 
