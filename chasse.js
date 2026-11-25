@@ -3,6 +3,7 @@
 (() => {
   'use strict';
   const MOT_SECRET = 'PART-CACHÉE';
+  const DEJA_TROUVEE = true; // gagnant trouvé le 25/11/2026
   const cible = document.querySelector('.credo');
   if (!cible) return;
 
@@ -43,7 +44,13 @@
     pop.className = 'egg-pop';
     pop.setAttribute('role', 'dialog');
     pop.setAttribute('aria-modal', 'true');
-    pop.innerHTML = `<div class="egg-card">
+    pop.innerHTML = DEJA_TROUVEE ? `<div class="egg-card">
+      <button class="egg-close" type="button" aria-label="Fermer">×</button>
+      ${part}
+      <h3>Trop tard, elle a déjà été trouvée&nbsp;!</h3>
+      <p>Bien joué quand même d'avoir déniché la part cachée 👀<br>Quelqu'un a été plus rapide et a gagné la pizza.</p>
+      <p>Mais on se retrouve bientôt pour d'autres surprises&nbsp;! Suis-nous sur Instagram <a href="https://www.instagram.com/coza_amilly/" target="_blank" rel="noopener"><strong>@coza_amilly</strong></a> pour ne rien rater.</p>
+    </div>` : `<div class="egg-card">
       <button class="egg-close" type="button" aria-label="Fermer">×</button>
       ${part}
       <h3>Bien vu, tu l'as trouvée&nbsp;!</h3>
