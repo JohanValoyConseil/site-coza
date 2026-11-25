@@ -267,14 +267,29 @@
     scrollTrigger: { trigger: '.ticket', start: 'top 85%' } });
   gsap.from('.midi__moment li', { x: -30, opacity: 0, stagger: .1, duration: .7, ease: 'power3.out', scrollTrigger: { trigger: '.midi__moment', start: 'top 88%' } });
 
-  /* Galerie horizontale (ordinateur) */
+  /* Galerie : carrousel automatique en boucle (ordinateur), ralenti au survol */
   mm.add(desktop, () => {
     const track = $('.gallery__track');
-    const dist = () => track.scrollWidth - innerWidth;
-    const tween = gsap.to(track, { x: () => -dist(), ease: 'none',
-      scrollTrigger: { trigger: '.gallery__pin', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true } });
-    $$('.shot img').forEach(img => gsap.fromTo(img, { xPercent: -6, yPercent: -8 }, { xPercent: 6, yPercent: 0, ease: 'none',
-      scrollTrigger: { trigger: img.parentElement, containerAnimation: tween, start: 'left right', end: 'right left', scrub: true } }));
+    const originals = $$('.shot', track);
+    const clones = originals.map(el => {
+      const c = el.cloneNode(true);
+      c.setAttribute('aria-hidden', 'true');
+      track.appendChild(c);
+      return c;
+    });
+    const loop = () => clones[0].offsetLeft - originals[0].offsetLeft;
+    const tween = gsap.to(track, { x: () => -loop(), duration: () => loop() / 55, ease: 'none', repeat: -1, invalidateOnRefresh: true });
+    const speed = (v) => gsap.to(tween, { timeScale: v, duration: .6, overwrite: true });
+    const onIn = () => speed(0), onOut = () => speed(1);
+    track.addEventListener('mouseenter', onIn);
+    track.addEventListener('mouseleave', onOut);
+    gsap.from(originals, { y: 60, opacity: 0, stagger: .08, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: track, start: 'top 85%' } });
+    return () => {
+      track.removeEventListener('mouseenter', onIn);
+      track.removeEventListener('mouseleave', onOut);
+      clones.forEach(c => c.remove());
+      gsap.set(track, { clearProps: 'transform' });
+    };
   });
   mm.add('(max-width: 980px)', () => {
     gsap.from('.shot', { y: 60, opacity: 0, stagger: .1, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: '.gallery__track', start: 'top 85%' } });

@@ -208,7 +208,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;op
 
 /* ---------- Galerie ---------- */
 .gallery{background:var(--cream);overflow:hidden}
-.gallery__pin{height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 0 40px}
+.gallery__pin{display:flex;flex-direction:column;justify-content:center;padding:clamp(80px,9vw,130px) 0 clamp(90px,9vw,140px)}
+@media (min-width:981px){.gallery .shot img{height:100%}}
 .gallery__title{font-family:var(--display);font-weight:400;font-size:clamp(46px,8vw,112px);line-height:1;color:var(--night);padding:0 var(--gutter);margin-bottom:34px}
 .gallery__title span{color:var(--yellow);-webkit-text-stroke:3px var(--night);paint-order:stroke fill}
 .gallery__track{display:flex;gap:28px;padding:0 var(--gutter);width:max-content;align-items:center}
