@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COZA · Cocktails & Pizzas · Amilly</title>
+<meta name="description" content="COZA, le festif italien à Amilly : pizzas, pâtes, cocktails signatures. 35 rue Raymond Tellier, 45200 Amilly.">
+<meta name="theme-color" content="#16362a">
+<link rel="icon" href="assets/citron.webp">
+<meta property="og:title" content="COZA · Cocktails & Pizzas · Amilly">
+<meta property="og:description" content="Le début de COcktail, la fin de PizZA. Le festif italien à Amilly.">
+<meta property="og:image" content="https://cozarestaurant.com/assets/pizza-four.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Caveat+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Rideau d'ouverture -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__word"><span class="lw lw--co">CO</span><img class="loader__lemon" src="assets/citron.webp" alt=""><span class="lw lw--za">ZA</span></div>
+</div>
+
+<header class="nav">
+  <a class="nav__logo" href="#top" aria-label="COZA, accueil"><img src="assets/logo.webp" alt="COZA"></a>
+  <nav class="nav__links" aria-label="Menu principal">
+    <a href="#concept">Le concept</a>
+    <a href="#carte">La carte</a>
+    <a href="#accord">L'accord</a>
+    <a href="#midi">Le midi</a>
+    <a href="#infos">Nous trouver</a>
+  </nav>
+  <a class="btn btn--yellow nav__cta" href="https://bookings.zenchef.com/results?rid=385376&pid=1001" target="_blank" rel="noopener">Réserver</a>
+  <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" aria-hidden="true">
+  <a href="#concept">Le concept</a>
+  <a href="#carte">La carte</a>
+  <a href="#accord">L'accord</a>
+  <a href="#midi">Le midi</a>
+  <a href="#infos">Nous trouver</a>
+  <a class="btn btn--yellow" href="https://bookings.zenchef.com/results?rid=385376&pid=1001" target="_blank" rel="noopener">Réserver une table</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bgword hero__bgword--1" aria-hidden="true"><span>COCKTAIL · PIZZA · COCKTAIL · PIZZA · COCKTAIL · PIZZA · </span><span>COCKTAIL · PIZZA · COCKTAIL · PIZZA · COCKTAIL · PIZZA · </span></div>
+    <div class="hero__bgword hero__bgword--2" aria-hidden="true"><span>AMILLY · FESTIF · ITALIEN · AMILLY · FESTIF · ITALIEN · </span><span>AMILLY · FESTIF · ITALIEN · AMILLY · FESTIF · ITALIEN · </span></div>
+
+    <figure class="hero__card hero__card--left" data-depth="0.6"><img src="assets/cocktails/clover.webp" alt="Cocktails signatures COZA"><figcaption>cocktails signatures</figcaption></figure>
+    <figure class="hero__card hero__card--right" data-depth="0.9"><img src="assets/pizza-four.webp" alt="Pizza COZA devant le four"><figcaption>pizzas au feu</figcaption></figure>
+    <img class="hero__lemon hero__lemon--a" data-depth="1.4" src="assets/citron.webp" alt="">
+    <img class="hero__lemon hero__lemon--b" data-depth="-1" src="assets/citron.webp" alt="">
+
+    <div class="hero__center">
+      <p class="hero__kicker">Le festif italien · Amilly</p>
+      <h1 class="hero__title"><img src="assets/logo.webp" alt="COZA"></h1>
+      <p class="hero__sub">Pizzas gourmandes, pâtes généreuses<br>et cocktails signatures, sous le même toit.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--yellow" href="https://bookings.zenchef.com/results?rid=385376&pid=1001" target="_blank" rel="noopener">Réserver une table</a>
+        <a class="btn btn--ghost" href="#carte">Voir la carte</a>
+      </div>
+    </div>
+
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+        <text><textPath href="#circ">LE FESTIF QUALITATIF ✦ 35 RUE RAYMOND TELLIER ✦ </textPath></text></svg>
+      <img src="assets/citron.webp" alt="">
+    </div>
+    <a class="hero__scroll" href="#concept" aria-label="Descendre"><span></span></a>
+  </section>
+
+  <!-- Bandeau défilant -->
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon__track">
+      <span>Pizzas maison</span><i>✦</i><span>Cocktails signatures</span><i>✦</i><span>Pâtes & gnocchis</span><i>✦</i><span>Tiramisu spéculoos</span><i>✦</i><span>Limoncello maison</span><i>✦</i>
+      <span>Pizzas maison</span><i>✦</i><span>Cocktails signatures</span><i>✦</i><span>Pâtes & gnocchis</span><i>✦</i><span>Tiramisu spéculoos</span><i>✦</i><span>Limoncello maison</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- CONCEPT : CO + ZA -->
+  <section class="concept" id="concept">
+    <div class="concept__pin">
+      <p class="eyebrow">CoZa, c'est quoi ?</p>
+      <div class="fuse" aria-label="COcktail plus pizZA égale COZA">
+        <span class="fuse__w fuse__w--1"><b>CO</b><em class="fuse__tail">cktail</em></span>
+        <span class="fuse__plus">+</span>
+        <span class="fuse__w fuse__w--2"><em class="fuse__head">piz</em><b>ZA</b></span>
+        <img class="fuse__lemon" src="assets/citron.webp" alt="">
+      </div>
+      <p class="concept__lead">Le début de <strong>CO</strong>cktail, la fin de piz<strong>ZA</strong>.<br>Un seul nom : <strong>COZA</strong> est né.</p>
+    </div>
+
+    <div class="concept__grid">
+      <article class="pillar">
+        <span class="pillar__num">01</span>
+        <h3>Deux univers, un lieu</h3>
+        <p>L'alliance de deux univers que tout oppose : le cocktail et la pizza, réunis pour une expérience unique.</p>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">02</span>
+        <h3>Aucun second rôle</h3>
+        <p>La carte des cocktails est aussi soignée que celle des pizzas. Chaque recette est pensée, testée, équilibrée. Ici, on vient autant pour boire que pour manger.</p>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">03</span>
+        <h3>Le festif qualitatif</h3>
+        <p>Sortir le soir rime trop souvent avec compromis. Chez nous, l'ambiance et l'exigence vont ensemble.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CREDO -->
+  <section class="credo">
+    <p class="credo__text" data-split>Un lieu où l'on peut faire la fête sans sacrifier ce qu'il y a dans l'assiette ou dans le verre.</p>
+    <p class="credo__sign">— notre credo</p>
+  </section>
+
+  <!-- LA CARTE -->
+  <section class="carte" id="carte">
+    <div class="stripes stripes--top" aria-hidden="true"></div>
+    <div class="carte__head">
+      <p class="eyebrow eyebrow--green">Carte d'hiver</p>
+      <h2 class="h2">La carte</h2>
+      <p class="carte__note">Toutes nos pâtes existent en gnocchis ou sans gluten. Prix TTC en euros.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Catégories de la carte">
+      <button role="tab" aria-selected="true" data-tab="pizzas">Pizzas</button>
+      <button role="tab" aria-selected="false" data-tab="cocktails">Cocktails</button>
+      <button role="tab" aria-selected="false" data-tab="pates">Pâtes & gnocchis</button>
+      <button role="tab" aria-selected="false" data-tab="entrees">Entrées & partage</button>
+      <button role="tab" aria-selected="false" data-tab="desserts">Desserts</button>
+      <span class="tabs__ink" aria-hidden="true"></span>
+    </div>
+
+    <div class="menu-list" id="menu-list" role="tabpanel" aria-live="polite"></div>
+    <p class="carte__foot" id="carte-foot"></p>
+    <div class="stripes stripes--bottom" aria-hidden="true"></div>
+  </section>
+
+  <!-- L'ACCORD COZA -->
+  <section class="accord" id="accord">
+    <div class="accord__intro">
+      <p class="eyebrow">Notre signature</p>
+      <h2 class="h2 h2--light">L'accord <span class="script">COZA</span></h2>
+      <p>Pour chaque pizza, le barman a pensé un cocktail. Choisis ta pizza, on te sert l'accord.</p>
+    </div>
+
+    <div class="accord__stage">
+      <ul class="accord__pizzas" id="accord-pizzas" role="listbox" aria-label="Choisir une pizza"></ul>
+
+      <div class="accord__match">
+        <div class="plate plate--empty">
+          <div class="plate__disc"><img class="plate__pizza" id="acc-pizza-photo" alt=""><img class="plate__logo" src="assets/citron.webp" alt=""></div>
+          <p class="plate__name" id="acc-pizza-name">La Margherita</p>
+        </div>
+        <div class="accord__x" aria-hidden="true">×</div>
+        <div class="glass">
+          <div class="glass__photo"><img id="acc-cocktail-photo" src="assets/cocktails/roco.webp" alt=""></div>
+          <svg class="glass__svg" viewBox="0 0 200 260" aria-hidden="true">
+            <defs><clipPath id="bowl"><path d="M30 30 Q100 40 170 30 Q160 130 100 140 Q40 130 30 30Z"/></clipPath></defs>
+            <g clip-path="url(#bowl)">
+              <rect id="liquid" x="0" y="60" width="200" height="120" fill="#F0643A"/>
+              <path id="wave" d="M0 60 Q25 52 50 60 T100 60 T150 60 T200 60 T250 60 V80 H0Z" fill="#F0643A"/>
+              <g id="bubbles" fill="rgba(255,255,255,.55)"><circle cx="70" cy="120" r="3"/><circle cx="110" cy="128" r="2.4"/><circle cx="130" cy="110" r="3.2"/><circle cx="88" cy="100" r="2"/><circle cx="120" cy="90" r="2.6"/></g>
+            </g>
+            <path d="M30 30 Q100 40 170 30 Q160 130 100 140 Q40 130 30 30Z" fill="none" stroke="#FAD22E" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M100 140 V226 M62 232 Q100 220 138 232" fill="none" stroke="#FAD22E" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="160" cy="34" r="17" fill="none" stroke="#FAD22E" stroke-width="4"/><path d="M160 17 V51 M143 34 H177" stroke="#FAD22E" stroke-width="2.5"/>
+          </svg>
+          <div class="glass__card">
+            <p class="glass__label">L'accord COZA</p>
+            <p class="glass__name" id="acc-cocktail-name">Le Roco Gin Tonic</p>
+            <p class="glass__meta" id="acc-cocktail-meta">25 cl · 10 %</p>
+            <p class="glass__ing" id="acc-cocktail-ing">Gin · Concombre · Rose · Tonic</p>
+            <p class="glass__free" id="acc-cocktail-free">Existe aussi sans alcool</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU DU MIDI -->
+  <section class="midi" id="midi">
+    <div class="midi__text">
+      <p class="eyebrow eyebrow--green">Du lundi au vendredi</p>
+      <h2 class="h2">Le midi,<br>on vous régale.</h2>
+      <p>Un plat du jour à l'ardoise, selon le marché et l'inspiration du chef, avec une boisson. Uniquement le midi, hors week-ends et jours fériés.</p>
+      <ul class="midi__moment">
+        <li><b>Le plat du moment</b> selon le marché</li>
+        <li><b>La pizza du moment</b> sélection du pizzaïolo</li>
+        <li><b>Le cocktail du moment</b> sélection du barman</li>
+      </ul>
+    </div>
+    <div class="ticket" aria-label="Menu du midi, 14 euros">
+      <div class="ticket__top">
+        <span class="ticket__title">Menu du midi</span>
+        <span class="ticket__price"><span class="count" data-to="14">14</span><small>€</small></span>
+      </div>
+      <ol class="ticket__lines">
+        <li><span>Plat du jour</span><span>inclus</span></li>
+        <li><span>Soft, verre de vin ou bière (25 cl)</span><span>inclus</span></li>
+        <li class="opt"><span>+ Entrée</span><span>6 €</span></li>
+        <li class="opt"><span>+ Dessert</span><span>5 €</span></li>
+      </ol>
+      <p class="ticket__foot">Hors week-ends et jours fériés</p>
+      <div class="stamp" aria-hidden="true">à l'ardoise</div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="gallery" id="galerie">
+    <div class="gallery__pin">
+      <h2 class="gallery__title">Chez <span>COZA</span></h2>
+      <div class="gallery__track">
+        <figure class="shot shot--tall"><img src="assets/terrasse.webp" alt="La terrasse de COZA" loading="lazy"><figcaption>La terrasse</figcaption></figure>
+        <figure class="shot"><img src="assets/cocktails.webp" alt="Cocktails au comptoir" loading="lazy"><figcaption>Le comptoir à cocktails</figcaption></figure>
+        <figure class="shot shot--tall"><img src="assets/bar.webp" alt="Le bar de COZA" loading="lazy"><figcaption>Le bar</figcaption></figure>
+        <figure class="shot"><img src="assets/pizza-four.webp" alt="Pizza sortie du four" loading="lazy"><figcaption>Sortie du four</figcaption></figure>
+        <figure class="shot shot--tall"><img src="assets/pizzas-story.webp" alt="Pizzas COZA" loading="lazy"><figcaption>À partager</figcaption></figure>
+        <figure class="shot shot--tall"><img src="assets/cocktails-story.webp" alt="Cocktails COZA" loading="lazy"><figcaption>Santé !</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS -->
+  <section class="avis">
+    <p class="eyebrow eyebrow--green">Ce que disent nos clients</p>
+    <div class="avis__grid">
+      <blockquote class="note note--y"><p>« Une très belle découverte ! Une cuisine italienne parfaite, avec une carte originale ! Des cocktails délicieux et préparés avec soin sous nos yeux. »</p><cite>Karine Q.</cite></blockquote>
+      <blockquote class="note note--g"><p>« Tout est parfait. Pizzas à la pâte légère, pâtes cuisinées avec des produits de qualité, entrées copieuses… Et les cocktails, super originaux. »</p><cite>cricri</cite></blockquote>
+      <blockquote class="note note--c"><p>« Très beau restaurant, la pizza était super bonne. Sympa le concept de boire un cocktail et de manger une pizza. »</p><cite>Joris</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- INFOS -->
+  <section class="infos" id="infos">
+    <div class="infos__left">
+      <p class="eyebrow">On vous attend</p>
+      <h2 class="h2 h2--light">Passez nous voir</h2>
+      <dl class="infos__list">
+        <div><dt>Adresse</dt><dd>35 rue Raymond Tellier<br>45200 Amilly</dd></div>
+        <div><dt>Cuisine 7j/7</dt><dd>
+          <table class="horaires">
+            <tr><td>Lun → jeu</td><td>12h – 13h30</td><td>19h – 21h30</td></tr>
+            <tr><td>Vendredi</td><td>12h – 13h30</td><td>19h – 22h</td></tr>
+            <tr><td>Samedi</td><td>12h – 14h</td><td>19h – 22h</td></tr>
+            <tr><td>Dimanche</td><td>12h – 14h</td><td>19h – 21h30</td></tr>
+          </table>
+          <small class="horaires__bar">Le bar reste ouvert après la cuisine.</small>
+        </dd></div>
+        <div><dt>Téléphone</dt><dd><a href="tel:+33651122844">06 51 12 28 44</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:cozarestaurant@outlook.fr">cozarestaurant@outlook.fr</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/coza_amilly/" target="_blank" rel="noopener">@coza_amilly</a></dd></div>
+        <div><dt>À emporter</dt><dd>Pizzas à emporter : <a href="tel:+33651122844">appelez-nous</a></dd></div>
+      </dl>
+      <div class="hero__ctas">
+        <a class="btn btn--yellow" href="https://bookings.zenchef.com/results?rid=385376&pid=1001" target="_blank" rel="noopener">Réserver une table</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=COZA+35+rue+Raymond+Tellier+45200+Amilly" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+    </div>
+    <div class="infos__map">
+      <iframe title="Plan d'accès COZA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=35%20rue%20Raymond%20Tellier%2C%2045200%20Amilly&z=15&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img class="footer__logo" src="assets/logo-tagline.webp" alt="COZA, cocktail et pizza">
+  <p>35 rue Raymond Tellier, 45200 Amilly · 06 51 12 28 44</p>
+  <p class="footer__small">L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="carte.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
